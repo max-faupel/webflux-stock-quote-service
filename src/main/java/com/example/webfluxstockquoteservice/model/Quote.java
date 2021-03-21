@@ -23,6 +23,6 @@ public class Quote {
     
     public Quote(String ticker, Double price) {
         this.ticker = ticker;
-        this.price = new BigDecimal(price);
+        this.price = new BigDecimal(price, MATH_CONTEXT);
     }
 }
